@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
  
-        <title>Box da Moda - Login</title>
+        <title>Box da Moda - Cadastro</title>
 
         <!-- Tags Gerais -->
         <meta NAME="DESCRIPTION" CONTENT="Clube de assinatura de novidades em moda"/>
@@ -101,9 +101,7 @@
 
             </div>
         </header><!-- #header -->
-
-
-
+        
         <main id="main">
 
 
@@ -117,36 +115,131 @@
 
                     <div class="row about-container">
 
-                        <div class="col-lg-12 content order-lg-1 order-2">                          
-
+                        <div class="col-lg-12 content order-lg-1 order-2">
                             <div class="icon-box wow fadeInUp " style="padding-top: 100px;">
                                 <div class="card bg-light mb-3" style="max-width: 60rem;">
-                                    <div class="card-header">Login</div>
+                                    <div class="card-header">Cadastro</div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group">
-                                                <label for="usuarioLogin">Usuário</label>
-                                                <input type="text" class="form-control" id="usuarioLogin" aria-describedby="emailHelp" placeholder="Usuário">
-                                                <small id="usuarioLogin" class="form-text text-muted"></small>
-                                            </div>  
-                                            <div class="form-group">
-                                                <label for="senhaLogin">Senha</label>
-                                                <input type="password" class="form-control" id="senhaLogin" aria-describedby="emailHelp" placeholder="Senha">
-                                                <small id="senhaLogin" class="form-text text-muted"></small>
-                                            </div> 
-                                            <div><p>Ainda não possui uma  conta? <a href="cadastroCliente.html">Cadastre-se aqui</a></p></div>
-                                            <button type="submit" class="btn btn-primary">Logar</button>
+                                            <div class="form-row">
+                                                <div class="form-group formCadastro">
+                                                    <label for="usuarioCadastro">Usuário</label>
+                                                    <input type="text" required class="form-control" id="usuarioCadastro" aria-describedby="emailHelp" placeholder="Usuário">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="senhaCadastro">Senha</label>
+                                                    <input type="password" required class="form-control" id="senhaCadastro" placeholder="Senha">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="nome">Nome</label>
+                                                    <input type="text" required class="form-control" id="nome" placeholder="Nome Completo">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" required class="form-control" id="email" placeholder="exemplo@gmail.com">           
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="cpf">CPF</label>
+                                                    <input type="text" required class="form-control" id="cpf" placeholder="Sem pontos e traços">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="endereco">Endereço</label>
+                                                    <input type="text" required class="form-control" id="endereco" placeholder="Rua/Avenida/etc.">                                 
+                                                </div>      
+                                                <div class="form-group formCadastro">
+                                                    <label for="numero">Número</label>
+                                                    <input type="text" required required class="form-control" id="numero" placeholder="Número">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="bairro">Bairro</label>
+                                                    <input type="text" required class="form-control" id="bairro" placeholder="Bairro">
+                                                </div>     
+                                                <div class="form-group formCadastro">
+                                                    <label for="cidade">Cidade</label>
+                                                    <input type="text" required class="form-control" id="cidade" placeholder="Cidade">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="uf">UF</label>
+                                                    <select class="form-control" id="uf" >
+                                                        <option>AC</option>
+                                                        <option>AL</option>
+                                                        <option>AP</option>
+                                                        <option>AM</option>
+                                                        <option>BA</option>
+                                                        <option>CE</option>
+                                                        <option>DF</option>
+                                                        <option>ES</option>
+                                                        <option>GO</option>
+                                                        <option>MA</option>
+                                                        <option>MT</option>
+                                                        <option>MS</option>
+                                                        <option>MG</option>
+                                                        <option>PA</option>
+                                                        <option>PB</option>
+                                                        <option>PR</option>
+                                                        <option>PE</option>
+                                                        <option>PI</option>
+                                                        <option>RJ</option>
+                                                        <option>RN</option>
+                                                        <option>RS</option>
+                                                        <option>RO</option>
+                                                        <option>RR</option>
+                                                        <option>SC</option>
+                                                        <option>SP</option>
+                                                        <option>SE</option>
+                                                        <option>TO</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="ddd1">DDD</label>
+                                                    <input  type="text" required class="form-control ddd" id="ddd1" placeholder="Somente números">
+                                                </div> 
+                                                <div class="form-group formCadastro">
+                                                    <label for="telefone">Telefone</label>
+                                                    <input type="text" required class="form-control" id="telefone" placeholder="Sem traço">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="ddd2">DDD</label>
+                                                    <input type="text" required class="form-control ddd" id="ddd2" placeholder="Somente números">
+                                                </div> 
+                                                <div class="form-group formCadastro" style="margin-left: 10px;">
+                                                    <label for="celular">Celular</label>
+                                                    <input type="text" required class="form-control" id="celular" placeholder="Sem traço">
+                                                </div>
+                                                <div class="form-group formCadastro">
+                                                    <label for="cep">CEP</label>
+                                                    <input type="text" required class="form-control" id="cep" placeholder="Sem traço">
+                                                </div>     
+                                            </div>              
+                                            <div><p>Possui uma conta? faça <a href="loginCliente.html">login aqui</a></p></div>
+
+                                            <button type="submit" class="btn btn-primary" >Cadastrar-se</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
+
+
+
                 </div>
             </section><!-- #about -->
 
-        </main>
 
+
+
+
+
+
+
+
+
+        </main>
+        
         <!--==========================
           Footer
         ============================-->
